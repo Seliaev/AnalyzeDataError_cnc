@@ -1,0 +1,31 @@
+/* Центрирование содержимого внутри body */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+/* Центрирование заголовков h1 и h2 */
+h1, h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Установка максимальной ширины изображений на 100% и автоматическое подстраивание высоты */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Центрирование таблицы */
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Центрирование содержимого ячеек внутри таблицы */
+td, th {
+    text-align: center;
+}

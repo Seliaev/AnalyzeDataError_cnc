@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Error Data Analysis</title>
+</head>
+<body>
+    <h1>Error Data Analysis</h1>
+    <form method="post" enctype="multipart/form-data" action="{{ url_for('index') }}">
+      <label for="file">Select an Excel file:</label>
+      <input type="file" name="file" id="file" accept=".xlsx">
+      <input type="submit" value="Download and analyze">
+    </form>
+    {% if basic_info %}
+        <h2>Error Statistics</h2>
+        <table>
+            <tr>
+                <th>Number of Unique Error Codes</th>
+                <td>{{ basic_info['unique_error_codes'] }}</td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <th>The most common mistakes</th>
+            </tr>
+            <tr>
+                <td>
+                    {% if basic_info['most_common_errors'] %}
+                        {{ basic_info['most_common_errors']|safe }}
+                    {% else %}
+                        No data available
+                    {% endif %}
+                </td>
+            </tr>
+        </table>
+        <h2>Histogram</h2>
+        {% if histogram_path %}
+            <img src="{{ url_for('plot', filename='histogram') }}" alt="Histogram">
+        {% else %}
+            <p>No data available</p>
+        {% endif %}
+        <h2>Pie Chart</h2>
+        {% if pie_path %}
+            <img src="{{ url_for('plot', filename='pie') }}" alt="Pie Chart">
+        {% else %}
+            <p>No data available</p>
+        {% endif %}
+    {% else %}
+        {% if load_data_error %}
+            <p>Error loading data: {{ load_data_error }}</p>
+        {% endif %}
+    {% endif %}
+</body>
+</html>
