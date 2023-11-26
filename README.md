@@ -43,7 +43,15 @@
 >matplotlib==3.8.2  
 >openpyxl==3.1.2  
 >pandas==2.1.3  
->seaborn==0.13.0  
+>seaborn==0.13.0
+
+
+<details>
+  <summary>Скриншоты</summary>
+![Alt text](/example/img.jpg?raw=true)
+  
+</details>
+
 
 
 
@@ -95,3 +103,10 @@ This web application is designed for the analysis of error data from a CNC machi
 >pandas==2.1.3  
 >seaborn==0.13.0  
 
+
+
+<details>
+  <summary>Screenshots</summary>
+![Alt text](/example/img.jpg?raw=true)
+  
+</details>
