@@ -13,7 +13,7 @@
    
 2. Перейдите в директорию проекта:
    ```bash
-    cd error-data-analysis-web-app
+    cd AnalyzeDataError_cnc
    ```
 
 2. Установите необходимые пакеты Python:
@@ -70,7 +70,7 @@ This web application is designed for the analysis of error data from a CNC machi
    ```
 2. Navigate to the project directory:
     ```bash
-    cd error-data-analysis-web-app
+    cd AnalyzeDataError_cnc
     ```
 
 3. Install the required Python packages:
