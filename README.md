@@ -48,7 +48,8 @@
 
 <details>
   <summary>Скриншоты</summary>
-![Alt text](/example/img.jpg?raw=true)
+
+![img_1.png](example/img_1.png)
   
 </details>
 
@@ -107,6 +108,6 @@ This web application is designed for the analysis of error data from a CNC machi
 
 <details>
   <summary>Screenshots</summary>
-![Alt text](/example/img.jpg?raw=true)
+![img_1.png](example/img_1.png)
   
 </details>
