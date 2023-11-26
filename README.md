@@ -36,7 +36,14 @@
 >server/templates/: HTML-шаблоны для веб-приложения.  
 >server/static/: Статические файлы, включая стили CSS.  
 >analyzer/analyzer.py: Модуль анализа данных об ошибках.  
->data/: Директория для хранения сгенерированных файлов Excel.  
+>data/: Директория для хранения сгенерированных файлов Excel.
+
+### Используемые библиотеки
+>﻿Flask==3.0.0  
+>matplotlib==3.8.2  
+>openpyxl==3.1.2  
+>pandas==2.1.3  
+>seaborn==0.13.0  
 
 
 
@@ -79,4 +86,12 @@ This web application is designed for the analysis of error data from a CNC machi
 >server/templates/: HTML templates for the web application.  
 >server/static/: Static files, including CSS styles.   
 >analyzer/analyzer.py: Error data analysis module.  
->data/: Directory for storing generated Excel files.  
+>data/: Directory for storing generated Excel files.
+
+### Used libraries
+>﻿Flask==3.0.0  
+>matplotlib==3.8.2  
+>openpyxl==3.1.2  
+>pandas==2.1.3  
+>seaborn==0.13.0  
+
